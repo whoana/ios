@@ -39,13 +39,23 @@ class ViewController: UIViewController {
     }
     var currentGame: Game!
     func newRound(){
-        let newWord = listOfWords.removeFirst()
-        currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
+        if !listOfWords.isEmpty {
+             
+ 
+            let newWord = listOfWords.removeFirst()
+            currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
+            
+            updateUI()
         
-        updateUI()
-        
+            enableLetterButtons(true)
+        } else {
+            enableLetterButtons(false)
+        }
+    }
+    
+    func enableLetterButtons(_ enable: Bool){
         for button in letterButtons {
-            button.isEnabled = true
+            button.isEnabled = enable
         }
     }
     
