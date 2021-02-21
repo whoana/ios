@@ -19,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hTf-3D-Pxa">
                                 <rect key="frame" x="0.0" y="0.0" width="1194" height="814"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOb-kx-Nxs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOb-kx-Nxs">
                                         <rect key="frame" x="0.0" y="0.0" width="1194" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="E3E-je-eXc"/>
@@ -395,6 +395,7 @@
                     </view>
                     <connections>
                         <outlet property="correctWordLabel" destination="gQw-52-C2g" id="q7D-el-djd"/>
+                        <outlet property="pointLabel" destination="wOb-kx-Nxs" id="cgF-RK-tbz"/>
                         <outlet property="scoreLabel" destination="CGy-Lo-ucb" id="xg6-GP-tZi"/>
                         <outlet property="treeImageView" destination="gVa-fm-kii" id="xN0-nN-Crm"/>
                         <outletCollection property="letterButtons" destination="mpD-GN-Hax" collectionClass="NSMutableArray" id="iq5-5E-rz1"/>

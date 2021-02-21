@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var pointLabel: UILabel!
+    
     @IBOutlet var treeImageView: UIImageView!
     
     @IBOutlet var correctWordLabel: UILabel!
