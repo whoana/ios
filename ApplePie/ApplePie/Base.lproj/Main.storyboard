@@ -19,10 +19,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hTf-3D-Pxa">
                                 <rect key="frame" x="0.0" y="0.0" width="1194" height="814"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="gVa-fm-kii">
-                                        <rect key="frame" x="0.0" y="0.0" width="1194" height="590"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOb-kx-Nxs">
+                                        <rect key="frame" x="0.0" y="0.0" width="1194" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="590" id="1H5-eZ-7Z3"/>
+                                            <constraint firstAttribute="height" constant="50" id="E3E-je-eXc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="gVa-fm-kii">
+                                        <rect key="frame" x="0.0" y="50" width="1194" height="540"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="540" id="1H5-eZ-7Z3"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jyC-kv-kDA">

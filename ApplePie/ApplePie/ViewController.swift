@@ -62,9 +62,16 @@ class ViewController: UIViewController {
     func updateUI(){
         
         var letters = [String]()
-        for letter in currentGame.formattedWord {
-            letters.append(String(letter))
+        //strech goal
+        //1. how to use map method
+//        for letter in currentGame.formattedWord {
+//            letters.append(String(letter))
+//        }
+        
+        letters = currentGame.formattedWord.map { (letter) -> String in
+            return String(letter)
         }
+        
         correctWordLabel.text = letters.joined(separator: " ")
         
         
